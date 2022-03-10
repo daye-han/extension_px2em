@@ -1,0 +1,69 @@
+{
+	"name": "px2em",
+	"displayName": "px2em",
+	"description": "px to em conversion made simple",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/daye-han/extention_px2em.git"
+	},
+	"activationEvents": [
+		"onCommand:extension.px2em"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "px2em",
+			"properties": {
+				"px2em.decimalPoint": {
+					"type": "number",
+					"default": 2,
+					"description": "decimal point"
+				},
+				"px2em.unitCheck": {
+					"type": "boolean",
+					"default": true,
+					"description": "after the conversion, attach unit em automatically"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.px2em",
+				"title": "px2em"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.px2em",
+				"key": "ctrl+shift+y",
+				"mac": "ctrl+shift+y",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.65.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"eslint": "^8.6.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.1.3",
+		"typescript": "^4.5.4",
+		"@vscode/test-electron": "^2.0.3"
+	},
+	"publisher": "daye"
+}
