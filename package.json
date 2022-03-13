@@ -2,7 +2,7 @@
 	"name": "px2em",
 	"displayName": "px2em",
 	"description": "px to em conversion made simple",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
@@ -11,7 +11,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/daye-han/extention_px2em.git"
+		"url": "https://github.com/daye-han/extension_px2em.git"
 	},
 	"activationEvents": [
 		"onCommand:extension.px2em"
