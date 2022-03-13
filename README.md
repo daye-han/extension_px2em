@@ -2,6 +2,7 @@
 px2em은 Visual Studio Code에서 단위 변환을 도와주는 확장 프로그램입니다.
 
 <br><br>
+
 ## 기능 (Features)
 css의 px 단위를 em 단위로 변환해줍니다.
 
@@ -14,9 +15,10 @@ css의 px 단위를 em 단위로 변환해줍니다.
 
 
 <br><br>
+
 ## 사용 (Usage)
 
-![이미지](https://raw.githubusercontent.com/daye-han/extention_px2em/master/images/px2em_usage.gif)
+![사용법 설명](images/px2em_usage.gif)
 
 1. 변환하고 싶은 값, 기준 폰트 입력
 	- 입력 방식 : `(em으로 변환할 px 값)/(기준 폰트 px 값)`
@@ -37,11 +39,9 @@ css의 px 단위를 em 단위로 변환해줍니다.
 	- 단축키 `ctrl+shift+Y` 입력하여 실행
 
 
-4. 변환된 값 확인
-
-
 
 <br><br>
+
 ## 설정 (Settings)
 
 | key                  | value(default) | type    | description                  |
@@ -65,11 +65,13 @@ css의 px 단위를 em 단위로 변환해줍니다.
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd>
 
 <br><br>
+
 ## 릴리즈 노트 (Release Notes)
 
 [릴리즈 노트](https://github.com/daye-han/extention_px2em/releases)
 
 <br><br>
+
 ## 라이선스 (License)
 
 MIT
