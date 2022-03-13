@@ -29,9 +29,15 @@ function cssPxToEmFunc() {
 
 	var selection = editor.selection;
 	var text = editor.document.getText(selection);
+	console.log(selection, text);
 
-	var _currentSize = Number(text.replace(/(\-?[0-9]*\.?[0-9]*)p?x?\/([0-9]*\.?[0-9]*)p?x?/ig, '$1'));
-	var _defaultSize = Number(text.replace(/(\-?[0-9]*\.?[0-9]*)p?x?\/([0-9]*\.?[0-9]*)p?x?/ig, '$2'));
+	var pattern = /^(\-?[0-9]+\.?[0-9]*)p?x?\/([0-9]+\.?[0-9]*)p?x?$/ig;
+	if(!pattern.test(text)){
+		return;
+	}
+
+	var _currentSize = Number(text.replace(pattern, '$1'));
+	var _defaultSize = Number(text.replace(pattern, '$2'));
 
 	var _calc = _currentSize / _defaultSize;
 	var _result = parseFloat(_calc.toFixed(decimalPoint));

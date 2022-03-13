@@ -2,7 +2,7 @@
 	"name": "px2em",
 	"displayName": "px2em",
 	"description": "px to em conversion made simple",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
