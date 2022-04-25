@@ -29,7 +29,6 @@ function cssPxToEmFunc() {
 
 	var selection = editor.selection;
 	var text = editor.document.getText(selection);
-	console.log(selection, text);
 
 	var pattern = /^(\-?[0-9]+\.?[0-9]*)p?x?\/([0-9]+\.?[0-9]*)p?x?$/ig;
 	if(!pattern.test(text)){

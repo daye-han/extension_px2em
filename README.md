@@ -34,7 +34,7 @@ css의 px 단위를 em 단위로 변환해줍니다.
 2. 변환하고 싶은 값`(em으로 변환할 px 값)/(기준 폰트 px 값)`을 마우스 드래그하여 선택
 
 3. 해당 프로그램 실행
-	- 명령 팔레트( `F1` or `ctrl+shift+P` )를 표시한 후 `px2em`을 입력하여 실행하거나,
+	- 명령 팔레트( `F1` or `ctrl+shift+P` )를 표시한 후 `px2em`을 입력하여 실행
 
 	- 단축키 `ctrl+shift+Y` 입력하여 실행
 
@@ -46,7 +46,7 @@ css의 px 단위를 em 단위로 변환해줍니다.
 
 | key                  | value(default) | type    | description                  |
 |----------------------|----------------|---------|------------------------------|
-| `px2em.decimalPoint` | 2              | Number  | 소수점 자리수                 |
+| `px2em.decimalPoint` | 3              | Number  | 소수점 자리수                 |
 | `px2em.unitCheck`    | true           | Boolean | 단위 변환 후 em 단위 추가 여부 |
 
 <br>
@@ -54,7 +54,7 @@ css의 px 단위를 em 단위로 변환해줍니다.
 **.vscode/settings.json**
 ```json
 {
-   "px2em.decimalPoint": 2,
+   "px2em.decimalPoint": 3,
    "px2em.unitCheck": true
 }
 ```
@@ -62,7 +62,8 @@ css의 px 단위를 em 단위로 변환해줍니다.
 <br>
 <strong>기본 단축키 (Default Key Bindings)</strong>
 
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd>
+Windows : <kbd>Ctrl + Shift + Y</kbd><br>
+macOS : <kbd>Cmd + Shift + Y</kbd>
 
 <br><br>
 
